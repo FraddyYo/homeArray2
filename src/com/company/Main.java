@@ -49,13 +49,27 @@ public class Main {
 
 
     public static void homework3() {
+        int[] arr = generateRandomArray();
+        int sum = 0;
+        for (int i : arr) {
+            sum += i;
+            float averageAmount = sum / (float) arr.length;
+            System.out.println("Средняя сумма трат за месяц составила " + averageAmount + " рублей");
+        }
+
     }
 
 
     public static void homework4() {
-
+        char[] reverseFullName = {'n', 'a', 'v', 'I', ' ', 'v', 'o', 'n', 'a', 'v', 'I'};
+        for (int i = reverseFullName.length - 1; i >= 0; i--) {
+            if (i <= 'I') {
+                System.out.print(reverseFullName[i]);
+            }
+        }
     }
 }
+
 
 
 
